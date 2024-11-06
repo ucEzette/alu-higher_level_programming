@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
-    count = 0  # Counter for the number of integers printed
-    for i in range(x):
+    nb_print = 0
+    for i in range(0, x):
         try:
-            print("{:d}".format(my_list[i]), end='')  # Attempt to print as integer
-            count += 1  # Increment count if successful
+            print('{:d}'.format(my_list[i]), end='')
+            nb_print += 1
         except (ValueError, TypeError):
-            continue  # Skip non-integer values
-        except IndexError:
-            break  # Stop if x is greater than the list length
-    print()  # Move to a new line after printing all integers
-    return count  # Return the count of integers printed
+            pass
+    print()
+    return nb_print
