@@ -4,6 +4,7 @@
 Define a class 'Square' with a private 'size' attribute
 """
 
+
 class Square:
     """
     Class to define a square with a private 'size' attribute.
