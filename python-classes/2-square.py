@@ -12,7 +12,7 @@ class Square:
 
     def __init__(self, size=0):
         """
-        Initialize the square with size, with validation for integer and positive values.
+        Initialize the square with size
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
