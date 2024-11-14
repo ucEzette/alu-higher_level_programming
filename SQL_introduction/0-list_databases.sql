@@ -1,2 +1,2 @@
-#!/bin/bash
+-- Lists all databases
 SHOW DATABASES;
